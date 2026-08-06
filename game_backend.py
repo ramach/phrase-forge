@@ -4,6 +4,7 @@ import hashlib
 import json
 import os
 import random
+import secrets
 import re
 from collections import Counter
 from dataclasses import dataclass
@@ -168,7 +169,7 @@ FALLBACK_WORDS = {
     "feet", "fete", "lining", "silver", "prime", "time", "course",
     "crash", "metal", "heavy", "talk", "small", "green", "light",
     "black", "sheep", "early", "bird", "final", "first", "hand",
-    "wheaten", "kneeler",
+    "wheaten", "kneeler", "claimer",
 }
 
 
@@ -488,11 +489,26 @@ def _matching_phrases(len_a: int, len_b: int, allow_swap: bool) -> List[tuple]:
     ]
 
 
-def pick_puzzle(len_a: int = 5, len_b: int = 4, allow_swap: bool = True) -> Puzzle:
+def pick_puzzle(
+    len_a: int = 5,
+    len_b: int = 4,
+    allow_swap: bool = True,
+    exclude_words: Optional[Tuple[str, str]] = None,
+) -> Puzzle:
+    """Select a curated Practice puzzle using system randomness.
+
+    ``exclude_words`` prevents the New Puzzle button from immediately returning
+    the same phrase when more than one compatible candidate is available.
+    """
     candidates = _matching_phrases(len_a, len_b, allow_swap)
     if not candidates:
         raise ValueError(f"No phrase is available for {len_a}+{len_b}. Enter your own words or change the lengths.")
-    return make_puzzle(*random.choice(candidates))
+    if exclude_words and len(candidates) > 1:
+        excluded = tuple(normalize_word(word) for word in exclude_words)
+        filtered = [item for item in candidates if (item[0], item[1]) != excluded]
+        if filtered:
+            candidates = filtered
+    return make_puzzle(*secrets.choice(candidates))
 
 
 def pick_daily_puzzle(day: date, len_a: int = 5, len_b: int = 4, allow_swap: bool = True) -> Puzzle:
@@ -507,7 +523,11 @@ def pick_daily_puzzle(day: date, len_a: int = 5, len_b: int = 4, allow_swap: boo
 def load_wordlist(max_n: int = 200_000) -> Tuple[str, ...]:
     try:
         from wordfreq import top_n_list  # type: ignore
-        return tuple(w.lower() for w in top_n_list("en", max_n) if WORD_RE.fullmatch(w))
+        words = {w.lower() for w in top_n_list("en", max_n) if WORD_RE.fullmatch(w)}
+        # Guaranteed project vocabulary must remain discoverable even when
+        # wordfreq omits or ranks a valid lower-frequency word too low.
+        words.update(FALLBACK_WORDS)
+        return tuple(sorted(words))
     except Exception:
         return tuple(sorted(FALLBACK_WORDS))
 
@@ -516,11 +536,16 @@ def is_valid_english_word(word: str, min_zipf: float = 2.0) -> bool:
     word = normalize_word(word)
     if not WORD_RE.fullmatch(word):
         return False
+    # Curated/guaranteed vocabulary takes precedence over a frequency model.
+    # This keeps valid lower-frequency words such as "kneeler" and "wheaten"
+    # accepted whether or not wordfreq is installed.
+    if word in FALLBACK_WORDS:
+        return True
     try:
         from wordfreq import zipf_frequency  # type: ignore
         return zipf_frequency(word, "en") >= min_zipf
     except Exception:
-        return word in FALLBACK_WORDS
+        return False
 
 
 def grade_solution(
