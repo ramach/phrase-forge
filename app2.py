@@ -16,6 +16,7 @@ except ImportError:
 
 from game_backend import (
     Puzzle,
+    all_valid_solutions,
     apply_bonus_score,
     build_validated_hint_candidates,
     compute_difficulty,
@@ -43,7 +44,7 @@ except ImportError:
 st.set_page_config(page_title="Phrase Forge", page_icon="🔤", layout="wide")
 init_db()
 
-APP_VERSION = "0.9.0-beta"
+APP_VERSION = "0.9.2-beta"
 BUILD_DATE = "2026.08.06"
 AI_SESSION_LIMIT = max(0, int(os.getenv("PHRASE_FORGE_AI_SESSION_LIMIT", "3")))
 
@@ -92,6 +93,9 @@ def new_game_state(
         "solutions_text": "",
         "bonus_phrase": "",
         "role_result": None,
+        "show_all_solutions": False,
+        "all_solutions": [],
+        "all_solutions_cache_key": None,
     }
 
 
@@ -378,6 +382,82 @@ with play_tab:
         f"**{vowel_min}** for vowel-starting solutions."
     )
     st.code(" ".join(sorted(puzzle.word1 + puzzle.word2)).upper(), language="text")
+
+    # Spoiler-controlled solution list. This uses the same grader and rule
+    # configuration as difficulty, hints, and player submissions.
+    solution_cache_key = (
+        str(game["puzzle_id"]),
+        int(min_letters),
+        bool(require_english_for_game),
+    )
+    spoiler_left, spoiler_right = st.columns([1, 3])
+    with spoiler_left:
+        spoiler_label = "🙈 Hide all solutions" if game.get("show_all_solutions") else "👀 Show all solutions"
+        if st.button(
+            spoiler_label,
+            key=f"toggle_all_solutions_{game['puzzle_id']}",
+            use_container_width=True,
+            help="Spoiler: reveals every solution validated under the current rules.",
+        ):
+            game["show_all_solutions"] = not bool(game.get("show_all_solutions"))
+            if game["show_all_solutions"]:
+                stored_solution_key = game.get("all_solutions_cache_key")
+                if isinstance(stored_solution_key, list):
+                    stored_solution_key = tuple(stored_solution_key)
+                if stored_solution_key != solution_cache_key or not game.get("all_solutions"):
+                    with st.spinner("Finding every validated solution..."):
+                        game["all_solutions"] = all_valid_solutions(
+                            puzzle,
+                            min_consonant_len=min_letters,
+                            require_english=require_english_for_game,
+                            limit=5000,
+                        )
+                    game["all_solutions_cache_key"] = solution_cache_key
+                    game["difficulty"] = {
+                        "solutions_found": len(game["all_solutions"]),
+                        "tier": (game.get("difficulty") or {}).get("tier"),
+                        "capped_at": 5000,
+                    }
+                    # Recompute the tier through the shared difficulty function so
+                    # the displayed count and difficulty remain synchronized.
+                    game["difficulty"] = compute_difficulty(puzzle, min_letters)
+            st.session_state.games[game["mode"]] = game
+            st.rerun()
+
+    if game.get("show_all_solutions"):
+        stored_solution_key = game.get("all_solutions_cache_key")
+        if isinstance(stored_solution_key, list):
+            stored_solution_key = tuple(stored_solution_key)
+        if stored_solution_key != solution_cache_key or not game.get("all_solutions"):
+            game["all_solutions"] = all_valid_solutions(
+                puzzle,
+                min_consonant_len=min_letters,
+                require_english=require_english_for_game,
+                limit=5000,
+            )
+            game["all_solutions_cache_key"] = solution_cache_key
+            st.session_state.games[game["mode"]] = game
+
+        solution_rows = [
+            {
+                "Solution": item["solution"],
+                "Length": item.get("len", len(item["solution"])),
+                "Starts with": "Vowel" if item.get("starts_with_vowel") else "Consonant",
+                "Base score": item.get("score_base", 0),
+            }
+            for item in game.get("all_solutions", [])
+        ]
+        with st.expander(
+            f"⚠️ Spoiler — all {len(solution_rows)} validated solutions",
+            expanded=True,
+        ):
+            if solution_rows:
+                st.dataframe(solution_rows, use_container_width=True, hide_index=True)
+                st.caption(
+                    "These answers passed the same letter, length, substring, and dictionary checks used when grading player submissions."
+                )
+            else:
+                st.info("No validated solutions were found under the current rules.")
 
     if phrase_metadata.get("meaning") or phrase_metadata.get("example"):
         with st.expander("📘 Phrase meaning and usage", expanded=False):

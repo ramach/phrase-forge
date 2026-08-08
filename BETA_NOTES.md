@@ -16,3 +16,7 @@ PHRASE_FORGE_OPENAI_MODEL = "gpt-5-mini"
 ```
 
 The app works without an API key; only the AI generator is disabled.
+
+## Solution reveal
+
+Players may select **Show all solutions** to reveal every answer validated under the active puzzle and rule configuration. This is intentionally marked as a spoiler and remains hidden by default.
