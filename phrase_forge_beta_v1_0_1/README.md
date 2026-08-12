@@ -53,3 +53,25 @@ PHRASE_FORGE_AI_SESSION_LIMIT = "3"
 AI only proposes phrases. The deterministic Phrase Forge engine must find at least one legal solution before an AI puzzle is accepted.
 
 See `docs/SPECIFICATION_1_0.md`, `docs/ARCHITECTURE.md`, `docs/PHRASE_FORGE_LEXICON.md`, and `docs/DEPLOYMENT.md`.
+
+I'd like us to aim for something like this in a future release:
+
+                 Phrase Forge Platform
+
+                ┌────────────────────┐
+                │   Streamlit UI     │
+                └─────────┬──────────┘
+                          │
+          ┌───────────────┼────────────────┐
+          │               │                │
+     Game Engine     Grammar Engine   Teacher Mode
+          │               │                │
+          └───────────────┼────────────────┘
+                          │
+                 Phrase Forge Lexicon
+                          │
+          ┌───────────────┼────────────────┐
+          │               │                │
+     PostgreSQL      Analytics      AI Assistant
+
+Notice that the Phrase Forge Lexicon sits at the center. I think that's the architecture that will allow the project to grow for years.
