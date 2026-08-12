@@ -100,10 +100,15 @@ Public beta announcement
 Phase A – Infrastructure, with this sequence:
 
 PostgreSQL / Supabase integration
+
 Automatic PostgreSQL detection via DATABASE_URL
+
 SQLite fallback for local development
+
 Zero changes to gameplay
+
 Persistent services
+
 Leaderboard
 Feedback
 Puzzle analytics
