@@ -70,8 +70,54 @@ I'd like us to aim for something like this in a future release:
                           │
                  Phrase Forge Lexicon
                           │
+
+
           ┌───────────────┼────────────────┐
           │               │                │
      PostgreSQL      Analytics      AI Assistant
+
+Phase A — Infrastructure (next)
+✅ PostgreSQL / Supabase backend
+✅ Persistent leaderboard
+✅ Persistent beta feedback
+✅ Analytics
+✅ Admin dashboard
+
+Phase B — Product Quality
+Phrase Forge Lexicon (PFL)
+Pronoun/proper-name classification improvements
+Puzzle quality metrics
+Puzzle Report Card
+
+Phase C — Public Launch
+Landing page
+Logo and branding
+Demo video
+Teacher Mode
+Public beta announcement
+
+
+Phase A – Infrastructure, with this sequence:
+
+PostgreSQL / Supabase integration
+Automatic PostgreSQL detection via DATABASE_URL
+SQLite fallback for local development
+Zero changes to gameplay
+Persistent services
+Leaderboard
+Feedback
+Puzzle analytics
+User sessions
+Admin Dashboard
+Live beta statistics
+Feedback browser
+Puzzle Report Cards
+Lexicon Inspector
+Solver diagnostics
+Deployment
+Streamlit Community Cloud
+Colab launcher
+Docker support (optional)
+Environment templates
 
 Notice that the Phrase Forge Lexicon sits at the center. I think that's the architecture that will allow the project to grow for years.
