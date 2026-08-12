@@ -76,39 +76,26 @@ I'd like us to aim for something like this in a future release:
           │               │                │
      PostgreSQL      Analytics      AI Assistant
 
-Phase A — Infrastructure
+### Phase A — Infrastructure
 
-✅ PostgreSQL / Supabase backend
+ 1) ✅ PostgreSQL / Supabase backend
+ 2) ✅ Persistent leaderboard
+ 3) ✅ Persistent beta feedback
+ 4) ✅ Analytics
+ 5) ✅ Admin dashboard
 
-✅ Persistent leaderboard
+### Phase B — Product Quality
+1) Phrase Forge Lexicon (PFL)
+2) Pronoun/proper-name classification improvements
+3) Puzzle quality metrics
+4) Puzzle Report Card
 
-✅ Persistent beta feedback
-
-✅ Analytics
-
-✅ Admin dashboard
-
-Phase B — Product Quality
-
-Phrase Forge Lexicon (PFL)
-
-Pronoun/proper-name classification improvements
-
-Puzzle quality metrics
-
-Puzzle Report Card
-
-Phase C — Public Launch
-
-Landing page
-
-Logo and branding
-
-Demo video
-
-Teacher Mode
-
-Public beta announcement
+### Phase C — Public Launch
+1) Landing page
+2) Logo and branding
+3) Demo video
+4) Teacher Mode
+5) Public beta announcement
 
 
 Phase A – Infrastructure, with this sequence:
@@ -117,26 +104,22 @@ Phase A – Infrastructure, with this sequence:
 1) PostgreSQL / Supabase integration
 2) Automatic PostgreSQL detection via DATABASE_URL
 3) SQLite fallback for local development
-
-Zero changes to gameplay
-
-Persistent services
-
-Leaderboard
-
-Feedback
-Puzzle analytics
-User sessions
-Admin Dashboard
-Live beta statistics
-Feedback browser
-Puzzle Report Cards
-Lexicon Inspector
-Solver diagnostics
-Deployment
-Streamlit Community Cloud
-Colab launcher
-Docker support (optional)
-Environment templates
+4) Zero changes to gameplay
+5) Persistent services
+6) Leaderboard
+7) Feedback
+8) Puzzle analytics
+9) User sessions
+10) Admin Dashboard
+11) Live beta statistics
+12) Feedback browser
+13) Puzzle Report Cards
+14) Lexicon Inspector
+15) Solver diagnostics
+16) Deployment
+17) Streamlit Community Cloud
+18) Colab launcher
+19) Docker support (optional)
+20) Environment templates
 
 Notice that the Phrase Forge Lexicon sits at the center. I think that's the architecture that will allow the project to grow for years.
