@@ -76,40 +76,54 @@ I'd like us to aim for something like this in a future release:
           │               │                │
      PostgreSQL      Analytics      AI Assistant
 
-Phase A — Infrastructure (next)
+Phase A — Infrastructure
+
 ✅ PostgreSQL / Supabase backend
+
 ✅ Persistent leaderboard
+
 ✅ Persistent beta feedback
+
 ✅ Analytics
+
 ✅ Admin dashboard
 
 Phase B — Product Quality
+
 Phrase Forge Lexicon (PFL)
+
 Pronoun/proper-name classification improvements
+
 Puzzle quality metrics
+
 Puzzle Report Card
 
 Phase C — Public Launch
+
 Landing page
+
 Logo and branding
+
 Demo video
+
 Teacher Mode
+
 Public beta announcement
 
 
 Phase A – Infrastructure, with this sequence:
+---------------------------------------------
 
-PostgreSQL / Supabase integration
-
-Automatic PostgreSQL detection via DATABASE_URL
-
-SQLite fallback for local development
+1) PostgreSQL / Supabase integration
+2) Automatic PostgreSQL detection via DATABASE_URL
+3) SQLite fallback for local development
 
 Zero changes to gameplay
 
 Persistent services
 
 Leaderboard
+
 Feedback
 Puzzle analytics
 User sessions
