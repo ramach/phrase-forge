@@ -12,11 +12,35 @@
         "teacher"
       ]
     },
+    "ardent": {
+      "definition": "Very enthusiastic, passionate, or fervent.",
+      "frequency": "less_common",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "profiles": [
+        "standard",
+        "expert",
+        "teacher"
+      ]
+    },
     "claimer": {
       "definition": "A person who makes a claim.",
       "frequency": "rare",
       "part_of_speech": [
         "noun"
+      ],
+      "profiles": [
+        "standard",
+        "expert",
+        "teacher"
+      ]
+    },
+    "earthen": {
+      "definition": "Made of earth or resembling earth; also having a natural brownish color.",
+      "frequency": "less_common",
+      "part_of_speech": [
+        "adjective"
       ],
       "profiles": [
         "standard",

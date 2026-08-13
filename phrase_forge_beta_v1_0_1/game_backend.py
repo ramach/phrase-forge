@@ -172,7 +172,7 @@ FALLBACK_WORDS = {
     "feet", "fete", "lining", "silver", "prime", "time", "course",
     "crash", "metal", "heavy", "talk", "small", "green", "light",
     "black", "sheep", "early", "bird", "final", "first", "hand",
-    "wheaten", "kneeler", "claimer",
+    "wheaten", "kneeler", "claimer", "earthen", "ardent",
 }
 
 
@@ -230,7 +230,7 @@ _COMMON_VERBS = {
     "am", "are", "be", "been", "being", "came", "come", "comes", "did", "do", "does",
     "done", "gave", "get", "gets", "go", "goes", "gone", "got", "had", "has", "have",
     "made", "make", "makes", "ran", "run", "runs", "said", "saw", "see", "seen", "take",
-    "takes", "took", "went", "were", "was", "work", "worked", "working",
+    "takes", "took", "went", "were", "was", "work", "worked", "working", "call", "called", "calling",
 }
 _COMMON_AUXILIARIES = {
     "am", "are", "be", "been", "being", "can", "could", "did", "do", "does", "had",
@@ -244,7 +244,7 @@ _COMMON_ADVERB_PARTICLES = {
 _COMMON_ADJECTIVES = {
     "big", "black", "blue", "bright", "cold", "dark", "early", "fast", "final", "first",
     "green", "hard", "heavy", "high", "hot", "last", "light", "little", "long", "new",
-    "old", "open", "quick", "red", "short", "silver", "small", "white", "young",
+    "old", "open", "quick", "red", "short", "silver", "small", "spare", "white", "young",
 }
 _COMMON_DETERMINERS = {"a", "an", "another", "each", "either", "every", "neither", "no", "some", "the", "this", "that", "these", "those"}
 _COMMON_PRONOUNS = {"he", "her", "hers", "him", "his", "i", "it", "its", "me", "mine", "our", "ours", "she", "their", "theirs", "them", "they", "us", "we", "you", "your", "yours"}
@@ -301,11 +301,15 @@ def _infer_roles_cached(word1: str, word2: str) -> dict:
         rule_id = "AUX_PLUS_VERB"
         rule_label = "Auxiliary + verb"
         reasoning = f"‘{w1}’ is a known auxiliary and ‘{w2}’ has a verb form."
-    elif _looks_verb(w1) and w2 in _COMMON_ADVERB_PARTICLES:
-        roles, confidence = ("verb", "adverb"), 0.94
-        rule_id = "VERB_PLUS_PARTICLE"
-        rule_label = "Verb + adverbial particle"
-        reasoning = f"‘{w1}’ is recognized as a verb and ‘{w2}’ is a common phrasal-verb particle or directional adverb."
+    elif _looks_verb(w1) and (w2 in _COMMON_ADVERB_PARTICLES or w2 in _COMMON_ADVERBS):
+        roles, confidence = ("verb", "adverb"), 0.94 if w2 in _COMMON_ADVERB_PARTICLES else 0.90
+        rule_id = "VERB_PLUS_PARTICLE" if w2 in _COMMON_ADVERB_PARTICLES else "VERB_PLUS_ADVERB"
+        rule_label = "Verb + adverbial particle" if w2 in _COMMON_ADVERB_PARTICLES else "Verb + adverb"
+        reasoning = (
+            f"‘{w1}’ is recognized as a verb and ‘{w2}’ is a common phrasal-verb particle or directional adverb."
+            if w2 in _COMMON_ADVERB_PARTICLES
+            else f"‘{w1}’ is recognized as a verb and ‘{w2}’ is a common adverb modifying the action."
+        )
     elif w1 in _COMMON_DETERMINERS:
         roles, confidence = ("determiner", "noun"), 0.90
         rule_id = "DETERMINER_PLUS_NOUN"

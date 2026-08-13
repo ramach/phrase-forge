@@ -38,8 +38,12 @@ from game_backend import (
 )
 from leaderboard_db import (
     init_db, submit_score, top_scores, submit_feedback, list_feedback,
-    db_backend_name, usage_summary, record_event,
+    db_backend_name, usage_summary, record_event, register_session,
+    start_puzzle_session, update_puzzle_progress, record_attempt, puzzle_report_cards,
+    record_vocabulary_discovery, vocabulary_notebook, discovery_summary,
 )
+from nickname_policy import validate_nickname
+from learning_metadata import word_learning_metadata
 
 try:
     from ai_puzzle_generator import generate_validated_ai_puzzle, ai_generation_available
@@ -62,8 +66,8 @@ for _secret_key in ("DATABASE_URL", "PHRASE_FORGE_DATABASE_URL", "OPENAI_API_KEY
 
 init_db()
 
-APP_VERSION = "1.0.1-beta"
-BUILD_DATE = "2026.08.09"
+APP_VERSION = "1.1.2-beta-phase-a-learning"
+BUILD_DATE = "2026.08.13"
 AI_SESSION_LIMIT = max(0, int(os.getenv("PHRASE_FORGE_AI_SESSION_LIMIT", "3")))
 
 ROLE_OPTIONS = ["noun", "verb", "adjective", "adverb", "pronoun", "preposition", "conjunction", "determiner", "interjection", "proper noun", "auxiliary", "other"]
@@ -142,6 +146,8 @@ def ensure_state() -> None:
     st.session_state.setdefault("beta_session_id", uuid.uuid4().hex[:12])
     st.session_state.setdefault("ai_generations_used", 0)
     st.session_state.setdefault("feedback_status", None)
+    st.session_state.setdefault("beta_nickname", "")
+    st.session_state.setdefault("nickname_status", None)
 
 
 def render_results(game: Dict[str, object]) -> None:
@@ -192,6 +198,22 @@ def render_results(game: Dict[str, object]) -> None:
                     st.write(f"Lexicon: **{word_meta.get('profile', lexicon_profile_for_game).title()}** · {word_meta.get('frequency') or 'frequency unknown'} · source: {word_meta.get('source')}")
                     if word_meta.get("definition"):
                         st.caption(word_meta["definition"])
+                learning = result.get("learning") or word_learning_metadata(solution, lexicon_profile_for_game)
+                with st.container(border=True):
+                    st.markdown(f"#### 📚 Word Card — {solution.upper()}")
+                    wc1, wc2, wc3 = st.columns(3)
+                    with wc1:
+                        roles = ", ".join(learning.get("part_of_speech") or []) or "Not yet classified"
+                        st.markdown(f"**Role(s):** {roles}")
+                    with wc2:
+                        st.markdown(f"**Frequency:** {learning.get('frequency_label', 'Unknown')}")
+                    with wc3:
+                        st.markdown(f"**Discovery:** +{learning.get('discovery_points', 0)}")
+                    if learning.get("definition"):
+                        st.markdown(f"**Definition:** {learning['definition']}")
+                    else:
+                        st.caption("Definition not yet curated in the Phrase Forge Lexicon.")
+                    st.caption(f"{learning.get('discovery_label', 'Vocabulary Discovery')} · source: {learning.get('lexicon_source')}")
                 explanation = explain_solution(puzzle, result)
                 for reason in explanation.get("score_reason", []):
                     st.write(f"• {reason}")
@@ -216,7 +238,7 @@ def current_game() -> Dict[str, object]:
 ensure_state()
 
 st.title("🔤 Phrase Forge")
-st.caption("Discover the language hidden inside language. · Beta 1.0")
+st.caption("Discover the language hidden inside language. · Beta 1.1 Phase A")
 st.caption(f"Version {APP_VERSION} · Build {BUILD_DATE}")
 
 with st.container(border=True):
@@ -240,6 +262,30 @@ with st.container(border=True):
     )
 
 with st.sidebar:
+    st.header("Beta player")
+    nickname_input = st.text_input(
+        "Nickname",
+        value=st.session_state.get("beta_nickname", ""),
+        placeholder="Choose a 3–24 character nickname",
+        help="Used for leaderboard and anonymous beta analytics. Please avoid personal information.",
+        key="nickname_input",
+    )
+    if st.button("Save nickname", use_container_width=True, key="save_nickname"):
+        check = validate_nickname(nickname_input)
+        if check.get("ok"):
+            st.session_state.beta_nickname = check["nickname"]
+            st.session_state.nickname_status = register_session(
+                st.session_state.beta_session_id, APP_VERSION, check["nickname"]
+            )
+            st.success(f"Playing as {check['nickname']}.")
+        else:
+            st.error(check.get("reason", "Please choose a different nickname."))
+    if st.session_state.get("beta_nickname"):
+        st.caption(f"Player: **{st.session_state.beta_nickname}**")
+    else:
+        st.caption("Nickname is optional for play, but required for leaderboard submission.")
+
+    st.divider()
     st.header("Game settings")
     mode = st.radio(
         "Mode",
@@ -383,7 +429,19 @@ min_letters = int(game["min_letters"])
 require_english_for_game = bool(game["require_english"])
 lexicon_profile_for_game = str(game.get("lexicon_profile", "standard"))
 
-play_tab, leaderboard_tab, feedback_tab, admin_tab = st.tabs(["🎮 Play", "🏆 Leaderboard", "💬 Feedback", "🧰 Admin"])
+# Phase A persistence: register the browser session and current puzzle.
+try:
+    register_session(
+        st.session_state.beta_session_id, APP_VERSION, st.session_state.get("beta_nickname") or None
+    )
+    start_puzzle_session(
+        st.session_state.beta_session_id, str(game["puzzle_id"]), str(game["mode"]),
+        f"{puzzle.word1} {puzzle.word2}", (game.get("difficulty") or {}).get("tier"),
+    )
+except Exception as _analytics_exc:
+    st.session_state["analytics_error"] = str(_analytics_exc)
+
+play_tab, vocabulary_tab, leaderboard_tab, feedback_tab, admin_tab = st.tabs(["🎮 Play", "📚 My Vocabulary", "🏆 Leaderboard", "💬 Feedback", "🧰 Admin"])
 
 with play_tab:
     if game.get("difficulty") is None:
@@ -566,6 +624,33 @@ with play_tab:
                 game["best_result"] = best
                 game["leaderboard_status"] = None
                 st.session_state.grade_results = results
+                try:
+                    hints_used = len(game.get("hint_history", []))
+                    for result in results:
+                        if result.get("ok"):
+                            learning = word_learning_metadata(str(result.get("solution", "")), lexicon_profile_for_game)
+                            result["learning"] = learning
+                            discovery = record_vocabulary_discovery(
+                                st.session_state.beta_session_id, str(game["puzzle_id"]),
+                                f"{puzzle.word1} {puzzle.word2}", str(result.get("solution", "")),
+                                learning, st.session_state.get("beta_nickname") or None,
+                            )
+                            result["new_discovery"] = bool(discovery.get("new"))
+                            result["discovery_points_awarded"] = int(discovery.get("discovery_points", 0))
+                        record_attempt(
+                            st.session_state.beta_session_id, str(game["puzzle_id"]), str(game["mode"]),
+                            str(result.get("raw_input", result.get("solution", ""))), bool(result.get("ok")),
+                            result.get("word_score", result.get("score_final", result.get("score_base"))),
+                            result.get("role_bonus"), result.get("combined_score"), hints_used,
+                        )
+                    update_puzzle_progress(
+                        st.session_state.beta_session_id, str(game["puzzle_id"]), str(game["mode"]),
+                        hints_used, completed=bool(valid),
+                    )
+                    record_event(st.session_state.beta_session_id, "graded", str(game["puzzle_id"]),
+                                 f"{puzzle.word1} {puzzle.word2}", {"submitted": len(results), "valid": len(valid)})
+                except Exception as _analytics_exc:
+                    st.session_state["analytics_error"] = str(_analytics_exc)
                 st.session_state.history.append({
                     "mode": game["mode"],
                     "puzzle_id": game["puzzle_id"],
@@ -634,6 +719,15 @@ with play_tab:
                 game["hint_level"] = level + 1
                 game["hint_complete"] = game["hint_level"] >= 8
 
+            try:
+                update_puzzle_progress(
+                    st.session_state.beta_session_id, str(game["puzzle_id"]), str(game["mode"]),
+                    len(game.get("hint_history", [])), completed=False,
+                )
+                record_event(st.session_state.beta_session_id, "hint", str(game["puzzle_id"]),
+                             f"{puzzle.word1} {puzzle.word2}", {"hint_level": game.get("hint_level", 0)})
+            except Exception as _analytics_exc:
+                st.session_state["analytics_error"] = str(_analytics_exc)
             # Persist the mutated game explicitly for hosted Streamlit sessions.
             st.session_state.games[game["mode"]] = game
             st.rerun()
@@ -696,8 +790,12 @@ with play_tab:
             f"Best result: **{best_result['solution']}** — "
             f"**{best_result.get('combined_score', best_result.get('score_final', best_result.get('score_base')))} points**"
         )
-        player = st.text_input("Player name", key=f"player_{game['puzzle_id']}")
-        if st.button("🏆 Submit to leaderboard", use_container_width=True):
+        player = st.session_state.get("beta_nickname", "")
+        if player:
+            st.caption(f"Submitting as **{player}**")
+        else:
+            st.info("Choose and save a nickname in the sidebar before submitting to the leaderboard.")
+        if st.button("🏆 Submit to leaderboard", use_container_width=True, disabled=not bool(player)):
             try:
                 response = submit_score(
                     day=game.get("puzzle_date"),
@@ -719,6 +817,35 @@ with play_tab:
                 st.info(f"Existing best score of {status['score']} was retained.")
             else:
                 st.success(f"Leaderboard saved: {status['status'].replace('_', ' ')}.")
+
+with vocabulary_tab:
+    st.subheader("📚 My Vocabulary Notebook")
+    st.caption("Accepted words you discover are saved here. A nickname lets your notebook follow you across sessions when using the persistent cloud database.")
+    try:
+        summary = discovery_summary(st.session_state.beta_session_id, st.session_state.get("beta_nickname") or None)
+        a, b, c = st.columns(3)
+        a.metric("Words discovered", summary.get("words_discovered", 0))
+        b.metric("Discovery score", summary.get("discovery_score", 0))
+        c.metric("Rare discoveries", summary.get("rare_discoveries", 0))
+        notebook = vocabulary_notebook(st.session_state.beta_session_id, st.session_state.get("beta_nickname") or None, limit=500)
+        if not notebook:
+            st.info("Your notebook is empty. Grade a valid forged word to add your first discovery.")
+        else:
+            rows=[]
+            for item in notebook:
+                meta=item.get("metadata") or {}
+                rows.append({
+                    "Word": item.get("word"),
+                    "Role(s)": ", ".join(meta.get("part_of_speech") or []),
+                    "Frequency": meta.get("frequency_label") or meta.get("frequency"),
+                    "Discovery points": item.get("discovery_points", 0),
+                    "Found in": item.get("words"),
+                    "Definition": meta.get("definition") or "Not yet curated",
+                })
+            st.dataframe(rows, use_container_width=True, hide_index=True)
+    except Exception as exc:
+        st.warning(f"Vocabulary notebook is temporarily unavailable: {exc}")
+
 
 with leaderboard_tab:
     st.subheader("Leaderboard")
@@ -790,6 +917,11 @@ with feedback_tab:
                     enjoyment_rating=enjoyment,
                     would_play_again=play_again,
                 )
+                try:
+                    record_event(st.session_state.beta_session_id, "feedback", str(game["puzzle_id"]),
+                                 f"{puzzle.word1} {puzzle.word2}", {"category": category})
+                except Exception as _analytics_exc:
+                    st.session_state["analytics_error"] = str(_analytics_exc)
             except ValueError as exc:
                 st.error(str(exc))
     with feedback_right:
@@ -805,10 +937,10 @@ with feedback_tab:
         st.success(
             f"Feedback saved for this beta session (ID {st.session_state.feedback_status['feedback_id']}). Thank you."
         )
-    st.info(
-        "On Streamlit Community Cloud, the current SQLite feedback store may reset after a restart or redeploy. "
-        "The downloadable diagnostic report is a backup until a persistent cloud database is connected."
-    )
+    if db_backend_name() == "postgresql":
+        st.success("Feedback is being stored in the persistent PostgreSQL backend.")
+    else:
+        st.info("Local SQLite mode is active. Configure DATABASE_URL for persistent multi-user cloud feedback and analytics.")
 
 
 with admin_tab:
@@ -893,6 +1025,25 @@ with admin_tab:
         },
     }
     st.json(diagnostics_payload)
+    st.divider()
+    st.subheader("Phase A infrastructure")
+    infra = usage_summary()
+    m1, m2, m3, m4 = st.columns(4)
+    m1.metric("Players", infra.get("players", 0))
+    m2.metric("Sessions", infra.get("sessions", 0))
+    m3.metric("Puzzle sessions", infra.get("puzzle_sessions", 0))
+    m4.metric("Attempts", infra.get("attempts", 0))
+    st.caption(f"Persistent backend: **{infra.get('backend', db_backend_name())}**")
+    if st.session_state.get("analytics_error"):
+        st.warning(f"Latest analytics warning: {st.session_state.analytics_error}")
+
+    report_rows = puzzle_report_cards(limit=100)
+    with st.expander("Puzzle Report Cards", expanded=False):
+        if report_rows:
+            st.dataframe(report_rows, use_container_width=True, hide_index=True)
+        else:
+            st.caption("Puzzle analytics will appear after beta play sessions are recorded.")
+
     feedback_rows = list_feedback(limit=100)
     if feedback_rows:
         st.write(f"Feedback records in this app instance: **{len(feedback_rows)}**")
