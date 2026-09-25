@@ -406,3 +406,34 @@ I'm excited to build it with you, and I'm looking forward to the next chapter of
                         │
                  Knowledge Graph
                  (Future Vision)
+
+# Prototype V1.0
+
+## Sprint UX-1: Core Experience
+
+Home
+Play
+Discovery Moment
+Word Card
+Continue Exploring
+
+## Sprint UX-2: Collections
+
+Theme Packs
+Collection Progress
+Discover More
+Cross-theme exploration
+
+## Sprint UX-3: Player Growth
+
+My Journey
+Learning history
+Achievements
+Community (preview only)
+
+## Sprint UX-4: Polish
+
+Mobile refinement
+Micro-animations
+Accessibility
+Final usability testing
