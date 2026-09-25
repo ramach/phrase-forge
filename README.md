@@ -387,3 +387,22 @@ I think that's worth doing well.
 So let's make Beta 1.2 – Discovery the release where Phrase Forge begins to feel like a polished educational product.
 
 I'm excited to build it with you, and I'm looking forward to the next chapter of our journey. 🚀
+
+## Version 1.3 - Beta
+
+                    Phrase Forge
+
+                      HOME
+                        │
+        ┌───────────────┼───────────────┐
+        │               │               │
+      PLAY          EXPLORE          LEARN
+        │               │               │
+   Puzzle Engine    Theme Packs    Word Cards
+        │               │               │
+   Explainability   AI Discovery   My Journey
+        │               │               │
+        └───────────────┼───────────────┘
+                        │
+                 Knowledge Graph
+                 (Future Vision)
