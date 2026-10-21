@@ -1,0 +1,162 @@
+{
+  "accepted_overrides": {
+    "already": {
+      "frequency": "common",
+      "part_of_speech": [
+        "adverb"
+      ],
+      "profiles": [
+        "casual",
+        "standard",
+        "expert",
+        "teacher"
+      ]
+    },
+    "ardent": {
+      "definition": "Very enthusiastic, passionate, or fervent.",
+      "frequency": "less_common",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "profiles": [
+        "standard",
+        "expert",
+        "teacher"
+      ]
+    },
+    "claimer": {
+      "definition": "A person who makes a claim.",
+      "frequency": "rare",
+      "part_of_speech": [
+        "noun"
+      ],
+      "profiles": [
+        "standard",
+        "expert",
+        "teacher"
+      ]
+    },
+    "earthen": {
+      "definition": "Made of earth or resembling earth; also having a natural brownish color.",
+      "frequency": "less_common",
+      "part_of_speech": [
+        "adjective"
+      ],
+      "profiles": [
+        "standard",
+        "expert",
+        "teacher"
+      ]
+    },
+    "kneeler": {
+      "definition": "A person who kneels; also a support used for kneeling.",
+      "frequency": "rare",
+      "part_of_speech": [
+        "noun"
+      ],
+      "profiles": [
+        "standard",
+        "expert",
+        "teacher"
+      ]
+    },
+    "wheaten": {
+      "definition": "Made of, relating to, or resembling wheat.",
+      "frequency": "rare",
+      "part_of_speech": [
+        "adjective",
+        "noun"
+      ],
+      "profiles": [
+        "standard",
+        "expert",
+        "teacher"
+      ]
+    }
+  },
+  "blocked_words": {
+    "all": "pronoun",
+    "amazon": "proper_name",
+    "another": "pronoun",
+    "any": "pronoun",
+    "anybody": "pronoun",
+    "anyone": "pronoun",
+    "anything": "pronoun",
+    "both": "pronoun",
+    "daniel": "proper_name",
+    "david": "proper_name",
+    "either": "pronoun",
+    "everybody": "pronoun",
+    "everyone": "pronoun",
+    "everything": "pronoun",
+    "few": "pronoun",
+    "he": "pronoun",
+    "her": "pronoun",
+    "herself": "pronoun",
+    "him": "pronoun",
+    "himself": "pronoun",
+    "i": "pronoun",
+    "india": "proper_name",
+    "ishant": "proper_name",
+    "ishtar": "proper_name",
+    "it": "pronoun",
+    "itself": "pronoun",
+    "james": "proper_name",
+    "john": "proper_name",
+    "joseph": "proper_name",
+    "london": "proper_name",
+    "many": "pronoun",
+    "mary": "proper_name",
+    "me": "pronoun",
+    "michael": "proper_name",
+    "mine": "pronoun",
+    "most": "pronoun",
+    "my": "pronoun",
+    "myself": "pronoun",
+    "neither": "pronoun",
+    "nobody": "pronoun",
+    "none": "pronoun",
+    "noone": "pronoun",
+    "nothing": "pronoun",
+    "oneself": "pronoun",
+    "our": "pronoun",
+    "ours": "pronoun",
+    "ourselves": "pronoun",
+    "paris": "proper_name",
+    "richard": "proper_name",
+    "robert": "proper_name",
+    "sarah": "proper_name",
+    "several": "pronoun",
+    "she": "pronoun",
+    "some": "pronoun",
+    "somebody": "pronoun",
+    "someone": "pronoun",
+    "something": "pronoun",
+    "that": "pronoun",
+    "their": "pronoun",
+    "theirs": "pronoun",
+    "them": "pronoun",
+    "themself": "pronoun",
+    "themselves": "pronoun",
+    "these": "pronoun",
+    "they": "pronoun",
+    "this": "pronoun",
+    "thomas": "proper_name",
+    "those": "pronoun",
+    "us": "pronoun",
+    "we": "pronoun",
+    "whatever": "pronoun",
+    "whichever": "pronoun",
+    "who": "pronoun",
+    "whoever": "pronoun",
+    "whom": "pronoun",
+    "whomever": "pronoun",
+    "whose": "pronoun",
+    "william": "proper_name",
+    "you": "pronoun",
+    "your": "pronoun",
+    "yours": "pronoun",
+    "yourself": "pronoun",
+    "yourselves": "pronoun"
+  }
+}
