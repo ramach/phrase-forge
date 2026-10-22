@@ -1,0 +1,2821 @@
+[
+  {
+    "word1": "back",
+    "word2": "door",
+    "phrase": "back door",
+    "category": "everyday",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Back’ modifies ‘door’, so it functions as an adjective in this phrase.",
+      "‘Door’ functions as a noun in this phrase."
+    ],
+    "meaning": "A secondary entrance or indirect method.",
+    "example": "They entered through the back door.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "best",
+    "word2": "friend",
+    "phrase": "best friend",
+    "category": "everyday",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Best’ modifies ‘friend’, so it functions as an adjective in this phrase.",
+      "‘Friend’ functions as a noun in this phrase."
+    ],
+    "meaning": "A closest and most trusted friend.",
+    "example": "Maya is her best friend.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "big",
+    "word2": "picture",
+    "phrase": "big picture",
+    "category": "business",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Big’ modifies ‘picture’, so it functions as an adjective in this phrase.",
+      "‘Picture’ functions as a noun in this phrase."
+    ],
+    "meaning": "The overall perspective rather than details.",
+    "example": "Focus on the big picture.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "black",
+    "word2": "sheep",
+    "phrase": "black sheep",
+    "category": "core",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Black’ modifies ‘sheep,’ so it functions as an adjective.",
+      "‘Sheep’ names the person or member metaphorically, so it functions as a noun."
+    ],
+    "meaning": "A person regarded as disreputable or different within a group.",
+    "example": "He was considered the black sheep of the family.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": true
+  },
+  {
+    "word1": "blank",
+    "word2": "check",
+    "phrase": "blank check",
+    "category": "business",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Blank’ modifies ‘check’, so it functions as an adjective in this phrase.",
+      "‘Check’ functions as a noun in this phrase."
+    ],
+    "meaning": "Unlimited authority or freedom to spend.",
+    "example": "The board did not give a blank check.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "blind",
+    "word2": "spot",
+    "phrase": "blind spot",
+    "category": "everyday",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Blind’ modifies ‘spot’, so it functions as an adjective in this phrase.",
+      "‘Spot’ functions as a noun in this phrase."
+    ],
+    "meaning": "An area that cannot be seen or a weakness not recognized.",
+    "example": "Bias can create a blind spot.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "blue",
+    "word2": "moon",
+    "phrase": "blue moon",
+    "category": "idiom",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Blue’ modifies ‘moon’, so it functions as an adjective in this phrase.",
+      "‘Moon’ functions as a noun in this phrase."
+    ],
+    "meaning": "A very rare occurrence.",
+    "example": "We only see them once in a blue moon.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "bottom",
+    "word2": "line",
+    "phrase": "bottom line",
+    "category": "business",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Bottom’ modifies ‘line’, so it functions as an adjective in this phrase.",
+      "‘Line’ functions as a noun in this phrase."
+    ],
+    "meaning": "The final result or essential point.",
+    "example": "The bottom line is that costs rose.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "brain",
+    "word2": "storm",
+    "phrase": "brainstorm",
+    "category": "education",
+    "roles": [
+      "noun",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Brain’ functions as a noun in this phrase.",
+      "‘Storm’ functions as a noun in this phrase."
+    ],
+    "meaning": "A session for generating ideas.",
+    "example": "The team held a brainstorming session.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "break",
+    "word2": "down",
+    "phrase": "break down",
+    "category": "phrasal verb",
+    "roles": [
+      "verb",
+      "adverb"
+    ],
+    "role_explanations": [
+      "‘Break’ expresses the action, so it functions as a verb.",
+      "‘Down’ modifies the action or direction, so it functions as an adverb or particle."
+    ],
+    "meaning": "To stop functioning or to separate into parts.",
+    "example": "The old car may break down.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "bright",
+    "word2": "future",
+    "phrase": "bright future",
+    "category": "everyday",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Bright’ modifies ‘future’, so it functions as an adjective in this phrase.",
+      "‘Future’ functions as a noun in this phrase."
+    ],
+    "meaning": "A promising and successful future.",
+    "example": "The student has a bright future.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "bright",
+    "word2": "idea",
+    "phrase": "bright idea",
+    "category": "everyday",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Bright’ modifies ‘idea’, so it functions as an adjective in this phrase.",
+      "‘Idea’ functions as a noun in this phrase."
+    ],
+    "meaning": "A clever or promising idea.",
+    "example": "That is a bright idea.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "bring",
+    "word2": "up",
+    "phrase": "bring up",
+    "category": "phrasal verb",
+    "roles": [
+      "verb",
+      "adverb"
+    ],
+    "role_explanations": [
+      "‘Bring’ expresses the action, so it functions as a verb.",
+      "‘Up’ modifies the action or direction, so it functions as an adverb or particle."
+    ],
+    "meaning": "To mention a topic or raise a child.",
+    "example": "She brought up an important issue.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "broken",
+    "word2": "record",
+    "phrase": "broken record",
+    "category": "idiom",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Broken’ modifies ‘record’, so it functions as an adjective in this phrase.",
+      "‘Record’ functions as a noun in this phrase."
+    ],
+    "meaning": "Someone who repeats the same thing.",
+    "example": "I sound like a broken record.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "busy",
+    "word2": "bee",
+    "phrase": "busy bee",
+    "category": "idiom",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Busy’ modifies ‘bee’, so it functions as an adjective in this phrase.",
+      "‘Bee’ functions as a noun in this phrase."
+    ],
+    "meaning": "A very active person.",
+    "example": "She has been a busy bee all morning.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "call",
+    "word2": "off",
+    "phrase": "call off",
+    "category": "phrasal verb",
+    "roles": [
+      "verb",
+      "adverb"
+    ],
+    "role_explanations": [
+      "‘Call’ expresses the action, so it functions as a verb.",
+      "‘Off’ modifies the action or direction, so it functions as an adverb or particle."
+    ],
+    "meaning": "To cancel something.",
+    "example": "They called off the match.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "carry",
+    "word2": "on",
+    "phrase": "carry on",
+    "category": "phrasal verb",
+    "roles": [
+      "verb",
+      "adverb"
+    ],
+    "role_explanations": [
+      "‘Carry’ expresses the action, so it functions as a verb.",
+      "‘On’ modifies the action or direction, so it functions as an adverb or particle."
+    ],
+    "meaning": "To continue.",
+    "example": "Please carry on with your work.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "cash",
+    "word2": "flow",
+    "phrase": "cash flow",
+    "category": "business",
+    "roles": [
+      "noun",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Cash’ functions as a noun in this phrase.",
+      "‘Flow’ functions as a noun in this phrase."
+    ],
+    "meaning": "Movement of money into and out of a business.",
+    "example": "The company improved its cash flow.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "chain",
+    "word2": "reaction",
+    "phrase": "chain reaction",
+    "category": "science",
+    "roles": [
+      "noun",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Chain’ functions as a noun in this phrase.",
+      "‘Reaction’ functions as a noun in this phrase."
+    ],
+    "meaning": "A sequence in which one event causes another.",
+    "example": "The announcement triggered a chain reaction.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "clean",
+    "word2": "slate",
+    "phrase": "clean slate",
+    "category": "idiom",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Clean’ modifies ‘slate’, so it functions as an adjective in this phrase.",
+      "‘Slate’ functions as a noun in this phrase."
+    ],
+    "meaning": "A fresh start without past burdens.",
+    "example": "The new year offers a clean slate.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "clear",
+    "word2": "cut",
+    "phrase": "clear-cut",
+    "category": "adjective phrase",
+    "roles": [
+      "adjective",
+      "adjective"
+    ],
+    "role_explanations": [
+      "‘Clear’ modifies ‘cut’, so it functions as an adjective in this phrase.",
+      "‘Cut’ modifies ‘clear’, so it functions as an adjective in this phrase."
+    ],
+    "meaning": "Definite and easy to understand.",
+    "example": "The evidence was clear-cut.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "close",
+    "word2": "call",
+    "phrase": "close call",
+    "category": "idiom",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Close’ modifies ‘call’, so it functions as an adjective in this phrase.",
+      "‘Call’ functions as a noun in this phrase."
+    ],
+    "meaning": "A narrowly avoided danger or failure.",
+    "example": "That was a close call.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "closed",
+    "word2": "door",
+    "phrase": "closed door",
+    "category": "everyday",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Closed’ modifies ‘door’, so it functions as an adjective in this phrase.",
+      "‘Door’ functions as a noun in this phrase."
+    ],
+    "meaning": "A private or inaccessible situation.",
+    "example": "The talks happened behind closed doors.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "cold",
+    "word2": "case",
+    "phrase": "cold case",
+    "category": "law",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Cold’ modifies ‘case’, so it functions as an adjective in this phrase.",
+      "‘Case’ functions as a noun in this phrase."
+    ],
+    "meaning": "An unsolved criminal investigation no longer actively pursued.",
+    "example": "Detectives reopened the cold case.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "cold",
+    "word2": "feet",
+    "phrase": "cold feet",
+    "category": "core",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Cold’ modifies ‘feet,’ so it functions as an adjective.",
+      "‘Feet’ names the body parts in the idiom, so it functions as a noun."
+    ],
+    "meaning": "A sudden loss of courage or confidence before an action.",
+    "example": "He got cold feet just before the presentation.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": true
+  },
+  {
+    "word1": "come",
+    "word2": "back",
+    "phrase": "come back",
+    "category": "phrasal verb",
+    "roles": [
+      "verb",
+      "adverb"
+    ],
+    "role_explanations": [
+      "‘Come’ expresses the action, so it functions as a verb.",
+      "‘Back’ modifies the action or direction, so it functions as an adverb or particle."
+    ],
+    "meaning": "To return.",
+    "example": "He came back early.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "common",
+    "word2": "sense",
+    "phrase": "common sense",
+    "category": "everyday",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Common’ modifies ‘sense’, so it functions as an adjective in this phrase.",
+      "‘Sense’ functions as a noun in this phrase."
+    ],
+    "meaning": "Practical judgment based on ordinary experience.",
+    "example": "Use common sense when crossing the road.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "core",
+    "word2": "value",
+    "phrase": "core value",
+    "category": "business",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Core’ modifies ‘value’, so it functions as an adjective in this phrase.",
+      "‘Value’ functions as a noun in this phrase."
+    ],
+    "meaning": "A fundamental belief guiding behavior.",
+    "example": "Integrity is a core value.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "crash",
+    "word2": "course",
+    "phrase": "crash course",
+    "category": "core",
+    "roles": [
+      "noun",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Crash’ is a noun used attributively to describe an intensive course.",
+      "‘Course’ is the head noun naming the program of study."
+    ],
+    "meaning": "A short, intensive introduction to a subject.",
+    "example": "She took a crash course in public speaking.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": true
+  },
+  {
+    "word1": "cross",
+    "word2": "road",
+    "phrase": "crossroads",
+    "category": "idiom",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Cross’ modifies ‘road’, so it functions as an adjective in this phrase.",
+      "‘Road’ functions as a noun in this phrase."
+    ],
+    "meaning": "A point at which an important choice must be made.",
+    "example": "The company is at a crossroads.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "cut",
+    "word2": "back",
+    "phrase": "cut back",
+    "category": "phrasal verb",
+    "roles": [
+      "verb",
+      "adverb"
+    ],
+    "role_explanations": [
+      "‘Cut’ expresses the action, so it functions as a verb.",
+      "‘Back’ modifies the action or direction, so it functions as an adverb or particle."
+    ],
+    "meaning": "To reduce.",
+    "example": "We need to cut back on expenses.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "daily",
+    "word2": "grind",
+    "phrase": "daily grind",
+    "category": "everyday",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Daily’ modifies ‘grind’, so it functions as an adjective in this phrase.",
+      "‘Grind’ functions as a noun in this phrase."
+    ],
+    "meaning": "Routine and tiring daily work.",
+    "example": "He wanted a break from the daily grind.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "dark",
+    "word2": "roast",
+    "phrase": "dark roast",
+    "category": "food and drink",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Dark’ modifies ‘roast’, so it functions as an adjective in this phrase.",
+      "‘Roast’ functions as a noun in this phrase."
+    ],
+    "meaning": "Coffee beans roasted until dark, producing a bold flavor.",
+    "example": "He prefers a dark roast in the morning.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "dead",
+    "word2": "wrong",
+    "phrase": "dead wrong",
+    "category": "core",
+    "roles": [
+      "adverb",
+      "adjective"
+    ],
+    "role_explanations": [
+      "‘Dead’ intensifies ‘wrong’ and therefore functions adverbially in this expression.",
+      "‘Wrong’ describes an incorrect state or judgment, so it functions as an adjective."
+    ],
+    "meaning": "Completely mistaken.",
+    "example": "The first estimate turned out to be dead wrong.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": true
+  },
+  {
+    "word1": "deep",
+    "word2": "sleep",
+    "phrase": "deep sleep",
+    "category": "everyday",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Deep’ modifies ‘sleep’, so it functions as an adjective in this phrase.",
+      "‘Sleep’ functions as a noun in this phrase."
+    ],
+    "meaning": "A state of very sound sleep.",
+    "example": "He fell into a deep sleep.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "double",
+    "word2": "check",
+    "phrase": "double-check",
+    "category": "verb phrase",
+    "roles": [
+      "adjective",
+      "verb"
+    ],
+    "role_explanations": [
+      "‘Double’ modifies ‘check’, so it functions as an adjective in this phrase.",
+      "‘Check’ expresses the action, so it functions as a verb."
+    ],
+    "meaning": "To verify something again.",
+    "example": "Please double-check the figures.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "early",
+    "word2": "bird",
+    "phrase": "early bird",
+    "category": "core",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Early’ modifies ‘bird,’ so it functions as an adjective.",
+      "‘Bird’ names the person metaphorically, so it functions as a noun."
+    ],
+    "meaning": "A person who acts, arrives, or wakes early.",
+    "example": "As an early bird, she finishes work before noon.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": true
+  },
+  {
+    "word1": "fair",
+    "word2": "play",
+    "phrase": "fair play",
+    "category": "sports",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Fair’ modifies ‘play’, so it functions as an adjective in this phrase.",
+      "‘Play’ functions as a noun in this phrase."
+    ],
+    "meaning": "Honest and respectful conduct.",
+    "example": "Fair play matters in every sport.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "false",
+    "word2": "alarm",
+    "phrase": "false alarm",
+    "category": "everyday",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘False’ modifies ‘alarm’, so it functions as an adjective in this phrase.",
+      "‘Alarm’ functions as a noun in this phrase."
+    ],
+    "meaning": "A warning that turns out not to signal real danger.",
+    "example": "The fire alert was a false alarm.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "family",
+    "word2": "tree",
+    "phrase": "family tree",
+    "category": "family",
+    "roles": [
+      "noun",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Family’ functions as a noun in this phrase.",
+      "‘Tree’ functions as a noun in this phrase."
+    ],
+    "meaning": "A diagram showing family relationships.",
+    "example": "They traced the family tree.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "fast",
+    "word2": "track",
+    "phrase": "fast track",
+    "category": "core",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Fast’ describes the accelerated track, so it functions as an adjective.",
+      "‘Track’ names the route or process, so it functions as a noun."
+    ],
+    "meaning": "A quicker route or process toward a goal.",
+    "example": "The proposal was placed on the fast track for approval.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": true
+  },
+  {
+    "word1": "field",
+    "word2": "trip",
+    "phrase": "field trip",
+    "category": "education",
+    "roles": [
+      "noun",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Field’ functions as a noun in this phrase.",
+      "‘Trip’ functions as a noun in this phrase."
+    ],
+    "meaning": "An educational visit away from school.",
+    "example": "The class took a field trip.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "final",
+    "word2": "word",
+    "phrase": "final word",
+    "category": "core",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Final’ modifies ‘word,’ so it functions as an adjective.",
+      "‘Word’ names the decisive statement, so it functions as a noun."
+    ],
+    "meaning": "The last or decisive statement or authority on a matter.",
+    "example": "The referee has the final word.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": true
+  },
+  {
+    "word1": "find",
+    "word2": "out",
+    "phrase": "find out",
+    "category": "phrasal verb",
+    "roles": [
+      "verb",
+      "adverb"
+    ],
+    "role_explanations": [
+      "‘Find’ expresses the action, so it functions as a verb.",
+      "‘Out’ modifies the action or direction, so it functions as an adverb or particle."
+    ],
+    "meaning": "To discover information.",
+    "example": "She found out the truth.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "fine",
+    "word2": "print",
+    "phrase": "fine print",
+    "category": "business",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Fine’ modifies ‘print’, so it functions as an adjective in this phrase.",
+      "‘Print’ functions as a noun in this phrase."
+    ],
+    "meaning": "Small-print terms that may contain important conditions.",
+    "example": "Read the fine print before signing.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "first",
+    "word2": "aid",
+    "phrase": "first aid",
+    "category": "health",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘First’ modifies ‘aid’, so it functions as an adjective in this phrase.",
+      "‘Aid’ functions as a noun in this phrase."
+    ],
+    "meaning": "Immediate basic care for illness or injury.",
+    "example": "She learned first aid.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "first",
+    "word2": "hand",
+    "phrase": "firsthand",
+    "category": "core",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘First’ modifies ‘hand’ in the historical compound, so it functions as an adjective.",
+      "‘Hand’ is the noun element of the compound expression."
+    ],
+    "meaning": "Directly experienced or obtained from the original source.",
+    "example": "She had firsthand knowledge of the event.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": true
+  },
+  {
+    "word1": "free",
+    "word2": "time",
+    "phrase": "free time",
+    "category": "everyday",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Free’ modifies ‘time’, so it functions as an adjective in this phrase.",
+      "‘Time’ functions as a noun in this phrase."
+    ],
+    "meaning": "Time available for personal activities.",
+    "example": "He reads during his free time.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "fresh",
+    "word2": "start",
+    "phrase": "fresh start",
+    "category": "everyday",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Fresh’ modifies ‘start’, so it functions as an adjective in this phrase.",
+      "‘Start’ functions as a noun in this phrase."
+    ],
+    "meaning": "A new beginning after difficulty or change.",
+    "example": "The move gave them a fresh start.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "front",
+    "word2": "line",
+    "phrase": "front line",
+    "category": "military",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Front’ modifies ‘line’, so it functions as an adjective in this phrase.",
+      "‘Line’ functions as a noun in this phrase."
+    ],
+    "meaning": "The area of direct action or greatest exposure.",
+    "example": "Nurses worked on the front line.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "full",
+    "word2": "circle",
+    "phrase": "full circle",
+    "category": "idiom",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Full’ modifies ‘circle’, so it functions as an adjective in this phrase.",
+      "‘Circle’ functions as a noun in this phrase."
+    ],
+    "meaning": "Back to an original position or situation.",
+    "example": "Her career came full circle.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "give",
+    "word2": "up",
+    "phrase": "give up",
+    "category": "phrasal verb",
+    "roles": [
+      "verb",
+      "adverb"
+    ],
+    "role_explanations": [
+      "‘Give’ expresses the action, so it functions as a verb.",
+      "‘Up’ modifies the action or direction, so it functions as an adverb or particle."
+    ],
+    "meaning": "To stop trying or surrender.",
+    "example": "Do not give up.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "go",
+    "word2": "on",
+    "phrase": "go on",
+    "category": "phrasal verb",
+    "roles": [
+      "verb",
+      "adverb"
+    ],
+    "role_explanations": [
+      "‘Go’ expresses the action, so it functions as a verb.",
+      "‘On’ modifies the action or direction, so it functions as an adverb or particle."
+    ],
+    "meaning": "To continue or happen.",
+    "example": "The meeting went on for hours.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "gold",
+    "word2": "standard",
+    "phrase": "gold standard",
+    "category": "business",
+    "roles": [
+      "noun",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Gold’ functions as a noun in this phrase.",
+      "‘Standard’ functions as a noun in this phrase."
+    ],
+    "meaning": "The highest or most trusted standard of quality.",
+    "example": "This test is considered the gold standard.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "good",
+    "word2": "faith",
+    "phrase": "good faith",
+    "category": "law",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Good’ modifies ‘faith’, so it functions as an adjective in this phrase.",
+      "‘Faith’ functions as a noun in this phrase."
+    ],
+    "meaning": "Honest intention and sincere dealing.",
+    "example": "They negotiated in good faith.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "green",
+    "word2": "light",
+    "phrase": "green light",
+    "category": "core",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Green’ modifies ‘light,’ so it functions as an adjective.",
+      "‘Light’ names the signal, so it functions as a noun."
+    ],
+    "meaning": "Permission to proceed.",
+    "example": "The board gave the project the green light.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": true
+  },
+  {
+    "word1": "ground",
+    "word2": "rule",
+    "phrase": "ground rule",
+    "category": "business",
+    "roles": [
+      "noun",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Ground’ functions as a noun in this phrase.",
+      "‘Rule’ functions as a noun in this phrase."
+    ],
+    "meaning": "A basic rule governing an activity.",
+    "example": "The facilitator set a ground rule.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "hard",
+    "word2": "ball",
+    "phrase": "play hardball",
+    "category": "core",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Hard’ modifies ‘ball’ in the compound expression, so it functions as an adjective.",
+      "‘Ball’ is the noun element of the compound ‘hardball.’"
+    ],
+    "meaning": "To act aggressively or uncompromisingly.",
+    "example": "The negotiators decided to play hardball.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": true
+  },
+  {
+    "word1": "hard",
+    "word2": "copy",
+    "phrase": "hard copy",
+    "category": "technology",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Hard’ modifies ‘copy’, so it functions as an adjective in this phrase.",
+      "‘Copy’ functions as a noun in this phrase."
+    ],
+    "meaning": "A printed version of a document.",
+    "example": "Please bring a hard copy.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "hard",
+    "word2": "time",
+    "phrase": "hard time",
+    "category": "everyday",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Hard’ modifies ‘time’, so it functions as an adjective in this phrase.",
+      "‘Time’ functions as a noun in this phrase."
+    ],
+    "meaning": "A difficult experience or period.",
+    "example": "He had a hard time understanding the rule.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "head",
+    "word2": "start",
+    "phrase": "head start",
+    "category": "everyday",
+    "roles": [
+      "noun",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Head’ functions as a noun in this phrase.",
+      "‘Start’ functions as a noun in this phrase."
+    ],
+    "meaning": "An early advantage.",
+    "example": "Practice gave her a head start.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "heavy",
+    "word2": "metal",
+    "phrase": "heavy metal",
+    "category": "core",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Heavy’ modifies ‘metal,’ so it functions as an adjective.",
+      "‘Metal’ is the head noun in the compound expression."
+    ],
+    "meaning": "A dense metal or a loud style of rock music, depending on context.",
+    "example": "The band is known for heavy metal.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": true
+  },
+  {
+    "word1": "hidden",
+    "word2": "gem",
+    "phrase": "hidden gem",
+    "category": "idiom",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Hidden’ modifies ‘gem’, so it functions as an adjective in this phrase.",
+      "‘Gem’ functions as a noun in this phrase."
+    ],
+    "meaning": "Something excellent that is not widely known.",
+    "example": "The café is a hidden gem.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "high",
+    "word2": "noon",
+    "phrase": "high noon",
+    "category": "core",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘High’ specifies the exact or fullest point of noon, so it functions as an adjective.",
+      "‘Noon’ names the time of day, so it functions as a noun."
+    ],
+    "meaning": "Exactly midday; figuratively, a decisive moment.",
+    "example": "The two sides met at high noon.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": true
+  },
+  {
+    "word1": "hold",
+    "word2": "on",
+    "phrase": "hold on",
+    "category": "phrasal verb",
+    "roles": [
+      "verb",
+      "adverb"
+    ],
+    "role_explanations": [
+      "‘Hold’ expresses the action, so it functions as a verb.",
+      "‘On’ modifies the action or direction, so it functions as an adverb or particle."
+    ],
+    "meaning": "To wait or maintain a grip.",
+    "example": "Hold on for a moment.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "home",
+    "word2": "run",
+    "phrase": "home run",
+    "category": "sports",
+    "roles": [
+      "noun",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Home’ functions as a noun in this phrase.",
+      "‘Run’ functions as a noun in this phrase."
+    ],
+    "meaning": "A baseball hit that allows a complete circuit, or a great success.",
+    "example": "The campaign was a home run.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "hot",
+    "word2": "seat",
+    "phrase": "hot seat",
+    "category": "idiom",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Hot’ modifies ‘seat’, so it functions as an adjective in this phrase.",
+      "‘Seat’ functions as a noun in this phrase."
+    ],
+    "meaning": "A position of pressure or close questioning.",
+    "example": "The witness was in the hot seat.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "human",
+    "word2": "error",
+    "phrase": "human error",
+    "category": "technology",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Human’ modifies ‘error’, so it functions as an adjective in this phrase.",
+      "‘Error’ functions as a noun in this phrase."
+    ],
+    "meaning": "A mistake made by a person.",
+    "example": "The outage was caused by human error.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "inside",
+    "word2": "track",
+    "phrase": "inside track",
+    "category": "idiom",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Inside’ modifies ‘track’, so it functions as an adjective in this phrase.",
+      "‘Track’ functions as a noun in this phrase."
+    ],
+    "meaning": "A position of advantage or special access.",
+    "example": "Her experience gave her the inside track.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "job",
+    "word2": "market",
+    "phrase": "job market",
+    "category": "business",
+    "roles": [
+      "noun",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Job’ functions as a noun in this phrase.",
+      "‘Market’ functions as a noun in this phrase."
+    ],
+    "meaning": "The supply and demand for employment.",
+    "example": "The job market remains competitive.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "key",
+    "word2": "player",
+    "phrase": "key player",
+    "category": "business",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Key’ modifies ‘player’, so it functions as an adjective in this phrase.",
+      "‘Player’ functions as a noun in this phrase."
+    ],
+    "meaning": "An important participant.",
+    "example": "She is a key player on the team.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "last",
+    "word2": "minute",
+    "phrase": "last minute",
+    "category": "everyday",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Last’ modifies ‘minute’, so it functions as an adjective in this phrase.",
+      "‘Minute’ functions as a noun in this phrase."
+    ],
+    "meaning": "The final possible moment.",
+    "example": "They made a last-minute change.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "last",
+    "word2": "straw",
+    "phrase": "the last straw",
+    "category": "core",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Last’ modifies ‘straw’ by identifying the final or decisive one, so it functions as an adjective.",
+      "‘Straw’ names the thing in the expression, so it functions as a noun."
+    ],
+    "meaning": "The final problem or irritation that makes a situation unbearable.",
+    "example": "The cancelled flight was the last straw after a week of delays.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": true
+  },
+  {
+    "word1": "learning",
+    "word2": "curve",
+    "phrase": "learning curve",
+    "category": "education",
+    "roles": [
+      "noun",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Learning’ functions as a noun in this phrase.",
+      "‘Curve’ functions as a noun in this phrase."
+    ],
+    "meaning": "The rate at which skill or knowledge is acquired.",
+    "example": "The software has a steep learning curve.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "life",
+    "word2": "cycle",
+    "phrase": "life cycle",
+    "category": "science",
+    "roles": [
+      "noun",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Life’ functions as a noun in this phrase.",
+      "‘Cycle’ functions as a noun in this phrase."
+    ],
+    "meaning": "The stages through which an organism or product passes.",
+    "example": "The butterfly has a complex life cycle.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "like",
+    "word2": "never",
+    "phrase": "like never before",
+    "category": "core",
+    "roles": [
+      "preposition",
+      "adverb"
+    ],
+    "role_explanations": [
+      "‘Like’ introduces a comparison, so it functions as a preposition.",
+      "‘Never’ modifies the comparison by expressing that no earlier time was similar, so it functions as an adverb."
+    ],
+    "meaning": "In a way or to a degree not experienced previously.",
+    "example": "The community worked together like never before.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": true
+  },
+  {
+    "word1": "long",
+    "word2": "river",
+    "phrase": "long river",
+    "category": "descriptive noun phrase",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Long’ modifies ‘river’, so it functions as an adjective in this phrase.",
+      "‘River’ functions as a noun in this phrase."
+    ],
+    "meaning": "A river extending over a great distance.",
+    "example": "The long river crossed several regions.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "long",
+    "word2": "shot",
+    "phrase": "long shot",
+    "category": "core",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Long’ modifies ‘shot,’ so it functions as an adjective.",
+      "‘Shot’ names the attempt or chance, so it functions as a noun."
+    ],
+    "meaning": "An attempt or possibility with little chance of success.",
+    "example": "Winning the contest was a long shot.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": true
+  },
+  {
+    "word1": "look",
+    "word2": "after",
+    "phrase": "look after",
+    "category": "phrasal verb",
+    "roles": [
+      "verb",
+      "preposition"
+    ],
+    "role_explanations": [
+      "‘Look’ expresses the action, so it functions as a verb.",
+      "‘After’ introduces a relationship to what follows, so it functions as a preposition."
+    ],
+    "meaning": "To take care of someone or something.",
+    "example": "She looks after the children.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "look",
+    "word2": "into",
+    "phrase": "look into",
+    "category": "phrasal verb",
+    "roles": [
+      "verb",
+      "preposition"
+    ],
+    "role_explanations": [
+      "‘Look’ expresses the action, so it functions as a verb.",
+      "‘Into’ introduces a relationship to what follows, so it functions as a preposition."
+    ],
+    "meaning": "To investigate.",
+    "example": "The team will look into the problem.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "low",
+    "word2": "profile",
+    "phrase": "low profile",
+    "category": "everyday",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Low’ modifies ‘profile’, so it functions as an adjective in this phrase.",
+      "‘Profile’ functions as a noun in this phrase."
+    ],
+    "meaning": "A state of attracting little attention.",
+    "example": "He kept a low profile.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "major",
+    "word2": "league",
+    "phrase": "major league",
+    "category": "sports",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Major’ modifies ‘league’, so it functions as an adjective in this phrase.",
+      "‘League’ functions as a noun in this phrase."
+    ],
+    "meaning": "The highest professional level in a sport.",
+    "example": "He reached the major leagues.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "make",
+    "word2": "up",
+    "phrase": "make up",
+    "category": "phrasal verb",
+    "roles": [
+      "verb",
+      "adverb"
+    ],
+    "role_explanations": [
+      "‘Make’ expresses the action, so it functions as a verb.",
+      "‘Up’ modifies the action or direction, so it functions as an adverb or particle."
+    ],
+    "meaning": "To invent, reconcile, or constitute.",
+    "example": "They made up after the argument.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "market",
+    "word2": "share",
+    "phrase": "market share",
+    "category": "business",
+    "roles": [
+      "noun",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Market’ functions as a noun in this phrase.",
+      "‘Share’ functions as a noun in this phrase."
+    ],
+    "meaning": "The portion of sales controlled by a company.",
+    "example": "The firm gained market share.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "middle",
+    "word2": "ground",
+    "phrase": "middle ground",
+    "category": "idiom",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Middle’ modifies ‘ground’, so it functions as an adjective in this phrase.",
+      "‘Ground’ functions as a noun in this phrase."
+    ],
+    "meaning": "A compromise between opposing positions.",
+    "example": "They searched for middle ground.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "mixed",
+    "word2": "feelings",
+    "phrase": "mixed feelings",
+    "category": "everyday",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Mixed’ modifies ‘feelings’, so it functions as an adjective in this phrase.",
+      "‘Feelings’ functions as a noun in this phrase."
+    ],
+    "meaning": "Conflicting emotions about something.",
+    "example": "She had mixed feelings about leaving.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "move",
+    "word2": "on",
+    "phrase": "move on",
+    "category": "phrasal verb",
+    "roles": [
+      "verb",
+      "adverb"
+    ],
+    "role_explanations": [
+      "‘Move’ expresses the action, so it functions as a verb.",
+      "‘On’ modifies the action or direction, so it functions as an adverb or particle."
+    ],
+    "meaning": "To continue to a new activity or stage.",
+    "example": "It is time to move on.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "narrow",
+    "word2": "escape",
+    "phrase": "narrow escape",
+    "category": "idiom",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Narrow’ modifies ‘escape’, so it functions as an adjective in this phrase.",
+      "‘Escape’ functions as a noun in this phrase."
+    ],
+    "meaning": "A situation in which danger is barely avoided.",
+    "example": "They had a narrow escape.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "new",
+    "word2": "leaf",
+    "phrase": "new leaf",
+    "category": "idiom",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘New’ modifies ‘leaf’, so it functions as an adjective in this phrase.",
+      "‘Leaf’ functions as a noun in this phrase."
+    ],
+    "meaning": "A change toward better behavior.",
+    "example": "He turned over a new leaf.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "night",
+    "word2": "owl",
+    "phrase": "night owl",
+    "category": "idiom",
+    "roles": [
+      "noun",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Night’ functions as a noun in this phrase.",
+      "‘Owl’ functions as a noun in this phrase."
+    ],
+    "meaning": "A person who stays awake late.",
+    "example": "She is a night owl.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "open",
+    "word2": "mind",
+    "phrase": "open mind",
+    "category": "everyday",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Open’ modifies ‘mind’, so it functions as an adjective in this phrase.",
+      "‘Mind’ functions as a noun in this phrase."
+    ],
+    "meaning": "A willingness to consider new ideas.",
+    "example": "Keep an open mind.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "open",
+    "word2": "secret",
+    "phrase": "open secret",
+    "category": "core",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Open’ modifies ‘secret’ by showing that it is widely known, so it functions as an adjective.",
+      "‘Secret’ names the supposedly hidden fact, so it functions as a noun."
+    ],
+    "meaning": "Something officially secret but widely known.",
+    "example": "Their rivalry was an open secret.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": true
+  },
+  {
+    "word1": "pain",
+    "word2": "point",
+    "phrase": "pain point",
+    "category": "core",
+    "roles": [
+      "noun",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Pain’ is a noun used attributively to identify the kind of point being discussed.",
+      "‘Point’ is the head noun naming a specific problem or source of difficulty."
+    ],
+    "meaning": "A specific problem, frustration, or obstacle that needs to be addressed.",
+    "example": "Slow checkout was the customers’ main pain point.",
+    "verified": true,
+    "known_solutions": [
+      "appoint"
+    ],
+    "enabled_for_random": true
+  },
+  {
+    "word1": "paper",
+    "word2": "trail",
+    "phrase": "paper trail",
+    "category": "business",
+    "roles": [
+      "noun",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Paper’ functions as a noun in this phrase.",
+      "‘Trail’ functions as a noun in this phrase."
+    ],
+    "meaning": "A sequence of documents providing evidence.",
+    "example": "Auditors followed the paper trail.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "phone",
+    "word2": "call",
+    "phrase": "phone call",
+    "category": "everyday",
+    "roles": [
+      "noun",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Phone’ functions as a noun in this phrase.",
+      "‘Call’ functions as a noun in this phrase."
+    ],
+    "meaning": "A conversation by telephone.",
+    "example": "I received a phone call.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "pick",
+    "word2": "up",
+    "phrase": "pick up",
+    "category": "phrasal verb",
+    "roles": [
+      "verb",
+      "adverb"
+    ],
+    "role_explanations": [
+      "‘Pick’ expresses the action, so it functions as a verb.",
+      "‘Up’ modifies the action or direction, so it functions as an adverb or particle."
+    ],
+    "meaning": "To collect, learn, or improve.",
+    "example": "I will pick up the package.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "plain",
+    "word2": "sight",
+    "phrase": "plain sight",
+    "category": "idiom",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Plain’ modifies ‘sight’, so it functions as an adjective in this phrase.",
+      "‘Sight’ functions as a noun in this phrase."
+    ],
+    "meaning": "A clearly visible place.",
+    "example": "The keys were hidden in plain sight.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "power",
+    "word2": "play",
+    "phrase": "power play",
+    "category": "sports",
+    "roles": [
+      "noun",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Power’ functions as a noun in this phrase.",
+      "‘Play’ functions as a noun in this phrase."
+    ],
+    "meaning": "A strategic move to gain control or advantage.",
+    "example": "The merger was a power play.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "price",
+    "word2": "range",
+    "phrase": "price range",
+    "category": "business",
+    "roles": [
+      "noun",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Price’ functions as a noun in this phrase.",
+      "‘Range’ functions as a noun in this phrase."
+    ],
+    "meaning": "The span between lowest and highest prices.",
+    "example": "The product fits our price range.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "prime",
+    "word2": "time",
+    "phrase": "prime time",
+    "category": "core",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Prime’ describes the most important or favorable time, so it functions as an adjective.",
+      "‘Time’ names the period, so it functions as a noun."
+    ],
+    "meaning": "The period of greatest importance or largest audience.",
+    "example": "The program airs during prime time.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": true
+  },
+  {
+    "word1": "public",
+    "word2": "figure",
+    "phrase": "public figure",
+    "category": "society",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Public’ modifies ‘figure’, so it functions as an adjective in this phrase.",
+      "‘Figure’ functions as a noun in this phrase."
+    ],
+    "meaning": "A person widely known to the public.",
+    "example": "The actor became a public figure.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "put",
+    "word2": "off",
+    "phrase": "put off",
+    "category": "phrasal verb",
+    "roles": [
+      "verb",
+      "adverb"
+    ],
+    "role_explanations": [
+      "‘Put’ expresses the action, so it functions as a verb.",
+      "‘Off’ modifies the action or direction, so it functions as an adverb or particle."
+    ],
+    "meaning": "To postpone.",
+    "example": "Do not put off the decision.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "quality",
+    "word2": "time",
+    "phrase": "quality time",
+    "category": "family",
+    "roles": [
+      "noun",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Quality’ functions as a noun in this phrase.",
+      "‘Time’ functions as a noun in this phrase."
+    ],
+    "meaning": "Time spent giving focused attention to someone.",
+    "example": "They spent quality time together.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "quick",
+    "word2": "fix",
+    "phrase": "quick fix",
+    "category": "core",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Quick’ modifies ‘fix,’ so it functions as an adjective.",
+      "‘Fix’ names the solution, so it functions as a noun."
+    ],
+    "meaning": "A rapid but often temporary solution.",
+    "example": "The patch was only a quick fix.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": true
+  },
+  {
+    "word1": "rain",
+    "word2": "delay",
+    "phrase": "rain delay",
+    "category": "core",
+    "roles": [
+      "noun",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Rain’ names the cause of the interruption. It is a noun used attributively to modify ‘delay’.",
+      "‘Delay’ names the interruption itself, so it functions as the head noun."
+    ],
+    "meaning": "A temporary postponement caused by rain, especially in sports.",
+    "example": "The baseball game resumed after a long rain delay.",
+    "verified": true,
+    "known_solutions": [
+      "already",
+      "aerial"
+    ],
+    "enabled_for_random": true
+  },
+  {
+    "word1": "real",
+    "word2": "estate",
+    "phrase": "real estate",
+    "category": "business",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Real’ modifies ‘estate’, so it functions as an adjective in this phrase.",
+      "‘Estate’ functions as a noun in this phrase."
+    ],
+    "meaning": "Property consisting of land and buildings.",
+    "example": "She works in real estate.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "red",
+    "word2": "tape",
+    "phrase": "red tape",
+    "category": "business",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Red’ modifies ‘tape’, so it functions as an adjective in this phrase.",
+      "‘Tape’ functions as a noun in this phrase."
+    ],
+    "meaning": "Excessive administrative rules or procedures.",
+    "example": "The permit was delayed by red tape.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "road",
+    "word2": "map",
+    "phrase": "road map",
+    "category": "business",
+    "roles": [
+      "noun",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Road’ functions as a noun in this phrase.",
+      "‘Map’ functions as a noun in this phrase."
+    ],
+    "meaning": "A plan showing steps toward a goal.",
+    "example": "The team created a product road map.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "root",
+    "word2": "cause",
+    "phrase": "root cause",
+    "category": "business",
+    "roles": [
+      "noun",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Root’ functions as a noun in this phrase.",
+      "‘Cause’ functions as a noun in this phrase."
+    ],
+    "meaning": "The underlying reason for a problem.",
+    "example": "The review identified the root cause.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "rough",
+    "word2": "draft",
+    "phrase": "rough draft",
+    "category": "education",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Rough’ modifies ‘draft’, so it functions as an adjective in this phrase.",
+      "‘Draft’ functions as a noun in this phrase."
+    ],
+    "meaning": "An early, unfinished version of a document.",
+    "example": "She completed a rough draft of the essay.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "run",
+    "word2": "into",
+    "phrase": "run into",
+    "category": "phrasal verb",
+    "roles": [
+      "verb",
+      "preposition"
+    ],
+    "role_explanations": [
+      "‘Run’ expresses the action, so it functions as a verb.",
+      "‘Into’ introduces a relationship to what follows, so it functions as a preposition."
+    ],
+    "meaning": "To meet unexpectedly or encounter a problem.",
+    "example": "I ran into an old friend.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "safe",
+    "word2": "bet",
+    "phrase": "safe bet",
+    "category": "idiom",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Safe’ modifies ‘bet’, so it functions as an adjective in this phrase.",
+      "‘Bet’ functions as a noun in this phrase."
+    ],
+    "meaning": "A choice likely to succeed.",
+    "example": "The experienced candidate is a safe bet.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "school",
+    "word2": "bus",
+    "phrase": "school bus",
+    "category": "education",
+    "roles": [
+      "noun",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘School’ functions as a noun in this phrase.",
+      "‘Bus’ functions as a noun in this phrase."
+    ],
+    "meaning": "A bus used to transport students.",
+    "example": "The school bus arrived early.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "second",
+    "word2": "chance",
+    "phrase": "second chance",
+    "category": "everyday",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Second’ modifies ‘chance’, so it functions as an adjective in this phrase.",
+      "‘Chance’ functions as a noun in this phrase."
+    ],
+    "meaning": "Another opportunity after failure.",
+    "example": "Everyone deserves a second chance.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "set",
+    "word2": "up",
+    "phrase": "set up",
+    "category": "phrasal verb",
+    "roles": [
+      "verb",
+      "adverb"
+    ],
+    "role_explanations": [
+      "‘Set’ expresses the action, so it functions as a verb.",
+      "‘Up’ modifies the action or direction, so it functions as an adverb or particle."
+    ],
+    "meaning": "To arrange or establish.",
+    "example": "They set up a new account.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "sharp",
+    "word2": "turn",
+    "phrase": "sharp turn",
+    "category": "travel",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Sharp’ modifies ‘turn’, so it functions as an adjective in this phrase.",
+      "‘Turn’ functions as a noun in this phrase."
+    ],
+    "meaning": "A sudden change in direction.",
+    "example": "The road takes a sharp turn.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "short",
+    "word2": "fuse",
+    "phrase": "short fuse",
+    "category": "core",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Short’ modifies ‘fuse,’ so it functions as an adjective.",
+      "‘Fuse’ is the noun at the center of the metaphor."
+    ],
+    "meaning": "A tendency to become angry quickly.",
+    "example": "The manager has a short fuse under pressure.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": true
+  },
+  {
+    "word1": "show",
+    "word2": "up",
+    "phrase": "show up",
+    "category": "phrasal verb",
+    "roles": [
+      "verb",
+      "adverb"
+    ],
+    "role_explanations": [
+      "‘Show’ expresses the action, so it functions as a verb.",
+      "‘Up’ modifies the action or direction, so it functions as an adverb or particle."
+    ],
+    "meaning": "To arrive or become visible.",
+    "example": "He showed up late.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "side",
+    "word2": "effect",
+    "phrase": "side effect",
+    "category": "health",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Side’ modifies ‘effect’, so it functions as an adjective in this phrase.",
+      "‘Effect’ functions as a noun in this phrase."
+    ],
+    "meaning": "An unintended secondary result.",
+    "example": "Drowsiness is a possible side effect.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "silent",
+    "word2": "partner",
+    "phrase": "silent partner",
+    "category": "business",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Silent’ modifies ‘partner’, so it functions as an adjective in this phrase.",
+      "‘Partner’ functions as a noun in this phrase."
+    ],
+    "meaning": "An investor not involved in daily management.",
+    "example": "The business has a silent partner.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "silver",
+    "word2": "lining",
+    "phrase": "silver lining",
+    "category": "core",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Silver’ describes the lining, so it functions as an adjective.",
+      "‘Lining’ names the hopeful feature in the metaphor, so it functions as a noun."
+    ],
+    "meaning": "A hopeful or positive aspect of a difficult situation.",
+    "example": "The extra family time was a silver lining.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": true
+  },
+  {
+    "word1": "small",
+    "word2": "talk",
+    "phrase": "small talk",
+    "category": "core",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Small’ characterizes the light or limited nature of the talk, so it functions as an adjective.",
+      "‘Talk’ names the conversation, so it functions as a noun."
+    ],
+    "meaning": "Polite conversation about ordinary, noncontroversial topics.",
+    "example": "They made small talk before the meeting.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": true
+  },
+  {
+    "word1": "social",
+    "word2": "media",
+    "phrase": "social media",
+    "category": "technology",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Social’ modifies ‘media’, so it functions as an adjective in this phrase.",
+      "‘Media’ functions as a noun in this phrase."
+    ],
+    "meaning": "Online platforms for sharing and interaction.",
+    "example": "The campaign spread through social media.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "sound",
+    "word2": "bite",
+    "phrase": "sound bite",
+    "category": "media",
+    "roles": [
+      "noun",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Sound’ functions as a noun in this phrase.",
+      "‘Bite’ functions as a noun in this phrase."
+    ],
+    "meaning": "A short memorable extract from speech.",
+    "example": "The interview produced a strong sound bite.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "status",
+    "word2": "quo",
+    "phrase": "status quo",
+    "category": "society",
+    "roles": [
+      "noun",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Status’ functions as a noun in this phrase.",
+      "‘Quo’ functions as a noun in this phrase."
+    ],
+    "meaning": "The existing state of affairs.",
+    "example": "They voted to preserve the status quo.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "steady",
+    "word2": "hand",
+    "phrase": "steady hand",
+    "category": "idiom",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Steady’ modifies ‘hand’, so it functions as an adjective in this phrase.",
+      "‘Hand’ functions as a noun in this phrase."
+    ],
+    "meaning": "Calm and reliable control.",
+    "example": "The project needs a steady hand.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "stiff",
+    "word2": "competition",
+    "phrase": "stiff competition",
+    "category": "business",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Stiff’ modifies ‘competition’, so it functions as an adjective in this phrase.",
+      "‘Competition’ functions as a noun in this phrase."
+    ],
+    "meaning": "Strong or difficult competition.",
+    "example": "The team faced stiff competition.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "straight",
+    "word2": "answer",
+    "phrase": "straight answer",
+    "category": "everyday",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Straight’ modifies ‘answer’, so it functions as an adjective in this phrase.",
+      "‘Answer’ functions as a noun in this phrase."
+    ],
+    "meaning": "A direct and honest answer.",
+    "example": "Please give me a straight answer.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "strong",
+    "word2": "coffee",
+    "phrase": "strong coffee",
+    "category": "food and drink",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Strong’ modifies ‘coffee’, so it functions as an adjective in this phrase.",
+      "‘Coffee’ functions as a noun in this phrase."
+    ],
+    "meaning": "Coffee with an intense flavor or high strength.",
+    "example": "She ordered strong coffee after lunch.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "sweet",
+    "word2": "spot",
+    "phrase": "sweet spot",
+    "category": "idiom",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Sweet’ modifies ‘spot’, so it functions as an adjective in this phrase.",
+      "‘Spot’ functions as a noun in this phrase."
+    ],
+    "meaning": "The ideal position or balance.",
+    "example": "This price is the market sweet spot.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "take",
+    "word2": "off",
+    "phrase": "take off",
+    "category": "phrasal verb",
+    "roles": [
+      "verb",
+      "adverb"
+    ],
+    "role_explanations": [
+      "‘Take’ expresses the action, so it functions as a verb.",
+      "‘Off’ modifies the action or direction, so it functions as an adverb or particle."
+    ],
+    "meaning": "To leave the ground, remove, or become successful.",
+    "example": "The plane took off on time.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "team",
+    "word2": "player",
+    "phrase": "team player",
+    "category": "business",
+    "roles": [
+      "noun",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Team’ functions as a noun in this phrase.",
+      "‘Player’ functions as a noun in this phrase."
+    ],
+    "meaning": "A person who works well with others.",
+    "example": "She is a dependable team player.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "tight",
+    "word2": "schedule",
+    "phrase": "tight schedule",
+    "category": "business",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Tight’ modifies ‘schedule’, so it functions as an adjective in this phrase.",
+      "‘Schedule’ functions as a noun in this phrase."
+    ],
+    "meaning": "A schedule with little spare time.",
+    "example": "We are working on a tight schedule.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "time",
+    "word2": "frame",
+    "phrase": "time frame",
+    "category": "business",
+    "roles": [
+      "noun",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Time’ functions as a noun in this phrase.",
+      "‘Frame’ functions as a noun in this phrase."
+    ],
+    "meaning": "A period during which something occurs.",
+    "example": "The project has a short time frame.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "tough",
+    "word2": "call",
+    "phrase": "tough call",
+    "category": "idiom",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Tough’ modifies ‘call’, so it functions as an adjective in this phrase.",
+      "‘Call’ functions as a noun in this phrase."
+    ],
+    "meaning": "A difficult decision.",
+    "example": "Choosing between them was a tough call.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "traffic",
+    "word2": "jam",
+    "phrase": "traffic jam",
+    "category": "travel",
+    "roles": [
+      "noun",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Traffic’ functions as a noun in this phrase.",
+      "‘Jam’ functions as a noun in this phrase."
+    ],
+    "meaning": "A buildup of vehicles causing delay.",
+    "example": "We were stuck in a traffic jam.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "trial",
+    "word2": "run",
+    "phrase": "trial run",
+    "category": "business",
+    "roles": [
+      "noun",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Trial’ functions as a noun in this phrase.",
+      "‘Run’ functions as a noun in this phrase."
+    ],
+    "meaning": "A preliminary test.",
+    "example": "They conducted a trial run.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "true",
+    "word2": "story",
+    "phrase": "true story",
+    "category": "everyday",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘True’ modifies ‘story’, so it functions as an adjective in this phrase.",
+      "‘Story’ functions as a noun in this phrase."
+    ],
+    "meaning": "An account of events that actually happened.",
+    "example": "The film is based on a true story.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "turn",
+    "word2": "down",
+    "phrase": "turn down",
+    "category": "phrasal verb",
+    "roles": [
+      "verb",
+      "adverb"
+    ],
+    "role_explanations": [
+      "‘Turn’ expresses the action, so it functions as a verb.",
+      "‘Down’ modifies the action or direction, so it functions as an adverb or particle."
+    ],
+    "meaning": "To reject or reduce.",
+    "example": "She turned down the offer.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "user",
+    "word2": "friendly",
+    "phrase": "user-friendly",
+    "category": "technology",
+    "roles": [
+      "noun",
+      "adjective"
+    ],
+    "role_explanations": [
+      "‘User’ functions as a noun in this phrase.",
+      "‘Friendly’ modifies ‘user’, so it functions as an adjective in this phrase."
+    ],
+    "meaning": "Easy for people to use.",
+    "example": "The new interface is user-friendly.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "value",
+    "word2": "chain",
+    "phrase": "value chain",
+    "category": "business",
+    "roles": [
+      "noun",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Value’ functions as a noun in this phrase.",
+      "‘Chain’ functions as a noun in this phrase."
+    ],
+    "meaning": "The linked activities that create value.",
+    "example": "The company reviewed its value chain.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "weather",
+    "word2": "forecast",
+    "phrase": "weather forecast",
+    "category": "science",
+    "roles": [
+      "noun",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Weather’ functions as a noun in this phrase.",
+      "‘Forecast’ functions as a noun in this phrase."
+    ],
+    "meaning": "A prediction of future weather.",
+    "example": "The weather forecast calls for rain.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "went",
+    "word2": "ahead",
+    "phrase": "went ahead",
+    "category": "phrasal verb",
+    "roles": [
+      "verb",
+      "adverb"
+    ],
+    "role_explanations": [
+      "‘Went’ expresses the action, so it functions as a verb.",
+      "‘Ahead’ modifies the action or direction, so it functions as an adverb or particle."
+    ],
+    "meaning": "Proceeded or continued with an action.",
+    "example": "They went ahead with the plan.",
+    "verified": true,
+    "known_solutions": [
+      "wheaten"
+    ],
+    "enabled_for_random": true
+  },
+  {
+    "word1": "white",
+    "word2": "noise",
+    "phrase": "white noise",
+    "category": "science and technology",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘White’ modifies ‘noise’, so it functions as an adjective in this phrase.",
+      "‘Noise’ functions as a noun in this phrase."
+    ],
+    "meaning": "A steady background sound containing many frequencies.",
+    "example": "The fan produced soothing white noise.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "wild",
+    "word2": "card",
+    "phrase": "wild card",
+    "category": "sports",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Wild’ modifies ‘card’, so it functions as an adjective in this phrase.",
+      "‘Card’ functions as a noun in this phrase."
+    ],
+    "meaning": "An unpredictable person or special entry.",
+    "example": "The rookie is the tournament wild card.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "word",
+    "word2": "choice",
+    "phrase": "word choice",
+    "category": "education",
+    "roles": [
+      "noun",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Word’ functions as a noun in this phrase.",
+      "‘Choice’ functions as a noun in this phrase."
+    ],
+    "meaning": "The selection of words in speech or writing.",
+    "example": "Careful word choice improves clarity.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "work",
+    "word2": "out",
+    "phrase": "work out",
+    "category": "phrasal verb",
+    "roles": [
+      "verb",
+      "adverb"
+    ],
+    "role_explanations": [
+      "‘Work’ expresses the action, so it functions as a verb.",
+      "‘Out’ modifies the action or direction, so it functions as an adverb or particle."
+    ],
+    "meaning": "To exercise or reach a solution.",
+    "example": "The plan worked out well.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  },
+  {
+    "word1": "zero",
+    "word2": "tolerance",
+    "phrase": "zero tolerance",
+    "category": "policy",
+    "roles": [
+      "adjective",
+      "noun"
+    ],
+    "role_explanations": [
+      "‘Zero’ modifies ‘tolerance’, so it functions as an adjective in this phrase.",
+      "‘Tolerance’ functions as a noun in this phrase."
+    ],
+    "meaning": "A policy allowing no violations.",
+    "example": "The school has zero tolerance for bullying.",
+    "verified": true,
+    "known_solutions": [],
+    "enabled_for_random": false
+  }
+]

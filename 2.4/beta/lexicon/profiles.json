@@ -1,0 +1,30 @@
+{
+  "casual": {
+    "label": "Casual",
+    "min_zipf": 3.5,
+    "allow_rare": false,
+    "description": "Everyday English; excludes names, pronouns, abbreviations and very rare words. Proper names and pronouns are excluded in every profile.",
+    "proper_name_max_zipf": 3.5
+  },
+  "standard": {
+    "label": "Standard",
+    "min_zipf": 2.0,
+    "allow_rare": true,
+    "description": "Phrase Forge beta default; broad English vocabulary with gameplay exclusions. Proper names and pronouns are excluded in every profile.",
+    "proper_name_max_zipf": 3.5
+  },
+  "expert": {
+    "label": "Expert",
+    "min_zipf": 1.2,
+    "allow_rare": true,
+    "description": "Allows rarer English vocabulary while retaining gameplay exclusions. Proper names and pronouns are excluded in every profile.",
+    "proper_name_max_zipf": 3.5
+  },
+  "teacher": {
+    "label": "Teacher",
+    "min_zipf": 1.2,
+    "allow_rare": true,
+    "description": "Expert vocabulary plus educational metadata when available. Proper names and pronouns are excluded in every profile.",
+    "proper_name_max_zipf": 3.5
+  }
+}
